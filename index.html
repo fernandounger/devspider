@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando Unger">
+    <meta name="description" content="devSpider is an app for finding users using the GitHub API.">
+    <title>devSpider</title>
+    <link rel="shortcut icon" href="./assets/img/spidertocat.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header__brand">
+                <a href="#" class="brand">devSpider</a>
+            </div>
+            <div class="header__mode">
+                <span>LIGHT</span>
+                <button onclick="lightMode()">
+                    <i class="fa-solid fa-sun theme"></i>
+                </button>
+            </div>
+        </header>
+        <div class="search__user">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search Github username..." value="">
+            </div>
+            <button class="search">Search</button>
+        </div>
+
+        <section>
+            <div class="container__user">
+                <div class="header__user">
+                    <div class="header__info">
+                        <div class="header__image">
+                            <img src="./assets/img/spidertocat.png" alt="Image Profile">
+                        </div>
+                        <div>
+                            <h2>You name</h2>
+                            <span class="user">@username</span>
+                            <h3 class="joined">Joined</h3>
+                        </div>
+                    </div>
+                    <div class="biography">
+                        <p class='bio'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolor commodi non
+                            sequi
+                            id totam sed.</p>
+                    </div>
+                </div>
+                <div class="user__info">
+                    <div>
+                        <span>Repos</span>
+                        <h3 class="repos">0</h3>
+                    </div>
+                    <div>
+                        <span>Followers</span>
+                        <h3 class="followers">0</h3>
+                    </div>
+                    <div>
+                        <span>Following</span>
+                        <h3 class="following">0</h3>
+                    </div>
+                </div>
+                <div class="user__profile">
+
+                    <div>
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <span class='location'>Not Available</span>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-twitter"></i>
+                        <span class="twitter">Not Available</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-link"></i>
+                        <span class="blog">Not Available</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-building"></i>
+                        <span class="company">Not Available</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script src="./assets/js/app.js" defer></script>
+</body>
+
+</html>
