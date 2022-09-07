@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    max-width: 1440px;
+    font-family: 'Rubik', sans-serif;
+    margin-inline: auto;
+    background-color: #141C2F;
+    color: #FFFF;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.light {
+    background-color: #FFFF;
+}
+
+.container {
+    max-width: 600px;
+    margin-top: 40px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+    gap: 1.2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header__brand a {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #DF1F2D;
+}
+
+header .header__mode span {
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+header .header__mode button {
+    cursor: pointer;
+    padding: 6px;
+    background-color: #C0242B;
+    color: #FFFF;
+    border-radius: 4px;
+}
+
+header .header__mode button i {
+    font-size: 1rem;
+}
+
+.search__user {
+    background-color: #1F2A48;
+    border-radius: 8px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search__user input {
+    background-color: transparent;
+    margin-left: 2px;
+    color: rgb(227, 225, 225);
+    font-family: 'Rubik', sans-serif;
+}
+
+.search__user input::placeholder {
+    color: rgb(227, 225, 225);
+    font-weight: 400;
+}
+
+.search__user button {
+    background-color: #C0242B;
+    color: #FFFF;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+section .container__user {
+    padding: 14px;
+    background-color: #1F2A48;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+section .container__user .header__user .header__info {
+    display: flex;
+}
+
+section .container__user .header__user .header__info .header__image {
+    max-width: 130px;
+}
+
+section .container__user .header__user .header__info .header__image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+section .container__user .header__user .header__info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+section .container__user .header__user .header__info div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section .container__user .header__user .header__info div span {
+    color: #DF1F2D;
+    font-size: 0.8rem;
+}
+
+section .container__user .header__user .header__info .joined {
+    font-weight: 400;
+    color: rgb(224, 224, 224);
+    font-size: 0.9rem;
+}
+
+section .container__user .header__user .biography {
+    margin: 20px 0;
+}
+
+section .container__user .header__user .biography .bio {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(224, 224, 224);
+    padding: 0 5px;
+}
+
+section .container__user .user__info {
+    background-color: #141C2F;
+    border-radius: 8px;
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .container__user .user__info div span {
+    color: rgb(224, 224, 224);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+section .container__user .user__profile {
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+}
+
+section .container__user .user__profile div i {
+    margin-right: 2px;
+    font-size: 0.9rem;
+}
+
+section .container__user .user__profile div span {
+    color: rgb(200, 200, 200);
+    font-size: 0.8rem;
+    width: 100%;
+}
